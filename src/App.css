@@ -1,0 +1,106 @@
+:root {
+  --main-color: #ffc500;
+  --bg-color: rgb(0, 0, 0);
+  --fr-color: white;
+  --con-color: white;
+  --back-img: url(./assets/images/bg-1.png) #f7f7f7;
+  --btm-color: #1e1e1e;
+  --gry-font: rgb(212, 212, 212);
+}
+[data-theme="dark"] {
+  --main-color: #ffc500;
+  --bg-color: rgb(255, 255, 255);
+  --fr-color: black;
+  --con-color: rgb(224, 224, 224);
+  --back-img: url(./assets/images/bg-1.png) rgb(0, 0, 0);
+  --btm-color: white;
+  --gry-font: rgb(107, 107, 107);
+  transition: 0.3s;
+}
+.container_shadow {
+  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+}
+.top_con {
+  background: var(--back-img);
+  padding-top: 10px;
+  height: auto;
+}
+.main-content {
+  background-color: var(--con-color);
+  border-radius: 5px;
+  padding-bottom: 40px;
+  min-height: 80%;
+  height: fit-content !important;
+  margin-bottom: 30px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.section-title2 {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.MuiGrid-root.section-title.MuiGrid-item {
+  margin: 20px 0px 0px 30px;
+}
+.MuiGrid-root.section-title2.MuiGrid-item {
+  margin: 60px 0px 0px 30px;
+}
+.MuiGrid-root.section-det.MuiGrid-item.MuiGrid-grid-xs-12 {
+  margin: 30px 10px 0px 30px;
+}
+
+.section-title span {
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 4px;
+  opacity: 0.3;
+  left: 0;
+  background-color: var(--main-color);
+}
+.section-title2 span {
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 4px;
+  opacity: 0.3;
+  left: 0;
+  background-color: var(--main-color);
+}
+.section2 {
+  background-color: #f1f1f1;
+  margin-top: 50px;
+}
+@media (max-width: 1030px) {
+  .profile {
+    min-width: fit-content;
+  }
+  .header {
+    margin-left: 120px;
+  }
+  .main-content {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .profile {
+    min-width: fit-content;
+  }
+  .header {
+    margin-left: 0px;
+  }
+  .main-content {
+    margin-left: 0px;
+  }
+}

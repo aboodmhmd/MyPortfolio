@@ -1,0 +1,73 @@
+.timeline {
+    padding:0 !important;
+}
+
+
+.timeline .timeline_firstitem {
+    min-height: 80px !important;
+    
+}
+
+
+.timeline .MuiTimelineItem-root {
+    min-height: 0px;
+   
+}
+
+.css-ha3bif-MuiTimelineItem-root:before{
+    display: none
+}
+
+.timeline .timeline_dot_header {
+    color: black;
+    background-color: var(--main-color);
+    padding:10px;
+} 
+
+.timeline .timeline_dot{
+    color: black;
+    border-color: var(--main-color);
+    background-color:white;
+    padding:2px;
+}
+
+.timeline .MuiTimelineConnector-root{
+    background-color: #eee !important;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.timeline .separator_padding {
+    padding-left: 20px !important;
+}
+
+
+.separator_padding2{
+    padding-left: 8px !important;
+}
+.ay{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.timeline .timeline_dot_header {
+    color: black;
+    background-color: var(--main-color);
+}
+
+span.MuiTimelineDot-root.MuiTimelineDot-filled.MuiTimelineDot-filledGrey.timeline_dot_header.css-v6mo1y-MuiTimelineDot-root{
+    margin: 0;
+}
+span.MuiTimelineDot-root.MuiTimelineDot-outlined.MuiTimelineDot-outlinedGrey.timeline_dot.css-6xp33q-MuiTimelineDot-root{
+    margin:0;
+}
+.MuiTypography-root.MuiTypography-body1.MuiTimelineContent-root.MuiTimelineContent-positionRight.css-18y2uza-MuiTypography-root-MuiTimelineContent-root{
+    margin:-12px 2px 6px
+}
+
+.title-con{
+    padding-top:25px !important;
+    font-weight: 900 !important;
+}

@@ -1,0 +1,122 @@
+.toggle {
+  height: 40px !important;
+  width: 70px !important;
+  border-radius: 50px !important;
+  background-image: linear-gradient(aqua, skyblue) !important;
+  position: relative !important;
+  cursor: pointer !important;
+  margin: 0px 0px 10px auto !important;
+  
+}
+
+.toggle.night {
+  background-image: linear-gradient(midnightblue, rebeccapurple) !important;
+}
+
+.notch {
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50% !important;
+  background: yellow !important;
+  position: absolute !important;
+  top: 5px !important;
+  left: 4px !important;
+  box-shadow: 0 0 5px yellow !important;
+  z-index: 1 !important;
+  transition: all 0.3s ease !important;
+}
+
+.notch > .crater {
+  background: burlywood !important;
+  border-radius: 50% !important;
+  position: absolute !important;
+  opacity: 0 !important;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4) inset !important;
+}
+.night .crater {
+  opacity: 0.4 !important;
+}
+
+.crater:first-child {
+  left: 2.5px !important;
+  top: 5px !important;
+  height: 5px !important;
+  width: 15px !important;
+  transform: rotate(-45deg) !important;
+}
+
+.crater:last-child {
+  right: 2px !important;
+  top: 8px !important;
+  height: 4px !important;
+  width: 12px !important;
+  transform: rotate(45deg) !important;
+}
+
+.night > .notch {
+  background: whitesmoke !important;
+  box-shadow: 0 0 5px whitesmoke !important;
+  transform: translate(32px, 0) !important;
+}
+
+.shape {
+  position: absolute !important;
+  background: whitesmoke !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.shape.sm {
+  height: 6px !important;
+  width: 45px !important;
+  top: 60% !important;
+  left: 20% !important;
+}
+
+.shape.md {
+  height: 4px !important;
+  width: 25px !important;
+  top: 25% !important;
+  left: 30% !important;
+  z-index: 2 !important;
+}
+
+.shape.lg {
+  height: 3px !important;
+  width: 20px !important;
+  bottom: 20px !important;
+  left: 60% !important;
+}
+
+.night .shape {
+  background: lightgray !important;
+  box-shadow: 0 0 10px 2px violet !important;
+}
+
+.night .shape.sm {
+  height: 3px !important;
+  width: 3px !important;
+  transform: translate(15px, -2px) !important;
+}
+
+.night .shape.sm:first-of-type {
+  transform: translate(0px, -8px) !important;
+}
+
+.night .shape.md {
+  height: 5px !important;
+  width: 5px !important;
+  transform: translate(0px, 0) !important;
+}
+
+.night .shape.lg {
+  height: 8px !important;
+  width: 8px !important;
+  transform: translate(-28px, 12px) !important;
+}
+.light {
+  background-color: beige;
+}
+.dark {
+  background-color: black;
+}

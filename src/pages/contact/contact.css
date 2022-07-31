@@ -1,0 +1,29 @@
+.contact-item {
+  color: grey;
+}
+.contact-item span {
+  color: black;
+}
+
+.map-container {
+  width: 70vh;
+  height: 50vh;
+  margin: 20px 20px 0px 65px;
+}
+
+@media (max-width: 1140px) {
+  .map-container {
+    width: 100%;
+    height: 50vh;
+    margin: 20px 20px 0px 0px;
+  }
+}
+
+.mrg {
+  margin: 20px 0px 0px 30px !important;
+}
+.mrg2 {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}

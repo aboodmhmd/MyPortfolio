@@ -1,0 +1,220 @@
+.continue-application {
+  --color: black !important;
+  --background: var(--main-color) !important;
+  --background-hover: #f7be02 !important;
+  --background-left: #2b3044 !important;
+  --folder: #f3e9cb !important;
+  --folder-inner: #beb393 !important;
+  --paper: #ffffff !important;
+  --paper-lines: #bbc1e1 !important;
+  --paper-behind: #e1e6f9 !important;
+  --pencil-cap: #fff !important;
+  --pencil-top: #275efe !important;
+  --pencil-middle: #fff !important;
+  --pencil-bottom: #5c86ff !important;
+  --shadow: rgba(13, 15, 25, 0.2) !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+  margin-left:10px !important;
+  position: relative !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 19px !important;
+  -webkit-appearance: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  padding: 12px 30px 12px 69px !important;
+  transition: background 0.3s !important;
+  color: var(--color) !important;
+  background: var(--bg, var(--background)) !important;
+}
+.continue-application > div {
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 53px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  border-radius: 4px 0 0 4px !important;
+  background: var(--background-left) !important;
+}
+.continue-application > div .folder {
+  width: 23px !important;
+  height: 27px !important;
+  position: absolute !important;
+  left: 15px !important;
+  top: 8px !important;
+}
+.continue-application > div .folder .top {
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 2 !important;
+  position: absolute !important;
+  transform: translateX(var(--fx, 0)) !important;
+  transition: transform 0.4s ease var(--fd, 0.3s) !important;
+}
+.continue-application > div .folder .top svg {
+  width: 24px !important;
+  height: 27px !important;
+  display: block !important;
+  fill: var(--folder) !important;
+  transform-origin: 0 50% !important;
+  transition: transform 0.3s ease var(--fds, 0.45s) !important;
+  transform: perspective(120px) rotateY(var(--fr, 0deg)) !important;
+}
+.continue-application > div .folder:before,
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  content: "" !important;
+  position: absolute !important;
+  left: var(--l, 0) !important;
+  top: var(--t, 0) !important;
+  width: var(--w, 100%) !important;
+  height: var(--h, 100%) !important;
+  border-radius: 1px !important;
+  background: var(--b, var(--folder-inner)) !important;
+}
+.continue-application > div .folder:before {
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow),
+    0 3.5px 7px var(--shadow) !important;
+  transform: translateX(var(--fx, 0)) !important;
+  transition: transform 0.4s ease var(--fd, 0.3s) !important;
+}
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px !important;
+  --t: 1px !important;
+  --w: 21px !important;
+  --h: 25px !important;
+  --b: var(--paper-behind) !important;
+}
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0)) !important;
+  transition: transform 0.4s ease var(--pbd, 0s) !important;
+}
+.continue-application > div .folder .paper {
+  z-index: 1 !important;
+  --b: var(--paper) !important;
+}
+.continue-application > div .folder .paper:before,
+.continue-application > div .folder .paper:after {
+  content: "" !important;
+  width: var(--wp, 14px) !important;
+  height: 2px !important;
+  border-radius: 1px !important;
+  transform: scaleY(0.5) !important;
+  left: 3px !important;
+  top: var(--tp, 3px) !important;
+  position: absolute !important;
+  background: var(--paper-lines) !important;
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines) !important;
+}
+.continue-application > div .folder .paper:after {
+  --tp: 6px !important;
+  --wp: 10px !important;
+}
+.continue-application > div .pencil {
+  height: 2px !important;
+  width: 3px !important;
+  border-radius: 1px 1px 0 0 !important;
+  top: 8px !important;
+  left: 105% !important;
+  position: absolute !important;
+  z-index: 3 !important;
+  transform-origin: 50% 19px !important;
+  background: var(--pencil-cap) !important;
+  transform: translateX(var(--pex, 0)) rotate(35deg) !important;
+  transition: transform 0.4s ease var(--pbd, 0s) !important;
+}
+.continue-application > div .pencil:before,
+.continue-application > div .pencil:after {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  background: var(
+    --b,
+    linear-gradient(
+      var(--pencil-top) 55%,
+      var(--pencil-middle) 55.1%,
+      var(--pencil-middle) 60%,
+      var(--pencil-bottom) 60.1%
+    )
+  ) !important;
+  width: var(--w, 5px) !important;
+  height: var(--h, 20px) !important;
+  border-radius: var(--br, 2px 2px 0 0) !important;
+  top: var(--t, 2px) !important;
+  left: var(--l, -1px) !important;
+}
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(
+    0 5%,
+    5px 5%,
+    5px 17px,
+    50% 20px,
+    0 17px
+  ) !important;
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px) !important;
+}
+.continue-application > div .pencil:after {
+  --b: none !important;
+  --w: 3px !important;
+  --h: 6px !important;
+  --br: 0 2px 1px 0 !important;
+  --t: 3px !important;
+  --l: 3px !important;
+  border-top: 1px solid var(--pencil-top) !important;
+  border-right: 1px solid var(--pencil-top) !important;
+}
+.continue-application:before,
+.continue-application:after {
+  content: "" !important;
+  position: absolute !important;
+  width: 10px !important;
+  height: 2px !important;
+  border-radius: 1px !important;
+  background: var(--color) !important;
+  transform-origin: 9px 1px !important;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg)) !important;
+  top: 20px !important;
+  right: 16px !important;
+  transition: transform 0.3s !important;
+}
+.continue-application:after {
+  --r: 45deg !important;
+}
+.continue-application:hover {
+  --cx: 2px !important;
+  --bg: var(--background-hover) !important;
+  --fx: -40px !important;
+  --fr: -60deg !important;
+  --fd: 0.15s !important;
+  --fds: 0s !important;
+  --pbx: 3px !important;
+  --pby: -3px !important;
+  --pbd: 0.15s !important;
+  --pex: -24px !important;
+}
+
+.dribbble {
+  position: fixed !important;
+  display: block !important;
+  right: 20px !important;
+  bottom: 20px !important;
+}
+.dribbble img {
+  display: block !important;
+  height: 28px !important;
+}
+.twitter2 {
+  position: fixed !important;
+  display: block !important;
+  right: 64px !important;
+  bottom: 14px !important;
+}
+.twitter2 svg {
+  width: 32px !important;
+  height: 32px !important;
+  fill: #1da1f2 !important;
+}

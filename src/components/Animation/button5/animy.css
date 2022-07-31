@@ -1,0 +1,84 @@
+:root {
+  --color-icon: #333333!important;
+  --social-icon1: #2c3e50!important;
+}
+.icon-list {
+  width: 100%!important;
+  max-width: 50rem!important;
+  list-style: none!important;
+  text-decoration: none !important;
+  padding: 0 1.5rem!important;
+  display: flex!important;
+  justify-content: space-between!important;
+}
+
+.icon-item {
+  list-style: none!important;
+  cursor: pointer!important;
+  text-decoration: none!important;
+}
+
+.icon-link {
+  display:flex!important;
+  font-size: 3rem!important;
+  text-decoration: none!important;
+  list-style: none!important;
+  text-decoration: none!important;
+  color: var(--color-icon)!important;
+  width: 6rem!important;
+  height: 6rem!important;
+  transition: 0.5s linear!important;
+  position: relative!important;
+  z-index: 1!important;
+  margin: auto!important;
+}
+
+.icon-link:hover {
+  color: #fff!important;
+}
+
+.icon-link i {
+  margin: auto!important;
+  list-style: none!important;
+}
+
+.icon-link::before {
+  content: ""!important;
+  position: absolute!important;
+  top: 0!important;
+  left: 0!important;
+  right: 0!important;
+  bottom: 0!important;
+  width: 6rem!important;
+  height: 6rem!important;
+  background: #000!important;
+  border-radius: 50%!important;
+  z-index: -1!important;
+  transform: scale(0)!important;
+  transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21)!important;
+}
+
+.icon-link:hover::before {
+  transform: scale(1)!important;
+
+}
+
+.icon-item:nth-child(1) a:hover:before {
+  background: var(--social-icon1)!important;
+}
+
+.icon-item:nth-child(2) a:hover:before {
+  background: var(--social-icon2)!important;
+}
+
+.icon-item:nth-child(3) a:hover:before {
+  background: var(--social-icon3)!important;
+}
+
+.icon-item:nth-child(4) a:hover:before {
+  background: var(--social-icon4)!important;
+}
+
+.icon-item:nth-child(5) a:hover:before {
+  background: var(--social-icon5)!important;
+}
