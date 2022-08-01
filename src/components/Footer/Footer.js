@@ -3,6 +3,9 @@ import "./Footer.css";
 import Resume from "../../utils/resumeData";
 
 const Footer = () => {
+  function btnUrl() {
+    window.open(Resume.social.Facebook.link);
+  }
   return (
     <div className="footer">
       <div className="footer_left">
@@ -13,9 +16,9 @@ const Footer = () => {
           @2022 All Rights Reserved
           <br/>
           Designed and Developed by{" "}
-          <a target="_blank" to={Resume.social.Facebook.link} rel="noreferrer">
+          <button onClick={btnUrl} className="btn-url">
             Me.
-          </a>{" "}
+          </button>{" "}
         </p>
       </div>
     </div>

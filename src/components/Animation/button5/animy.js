@@ -3,9 +3,9 @@ import "./animy.css";
 function animy() {
   return (
     <li class="icon-item">
-      <a class="icon-link">
+      <button class="icon-link">
         <i class="fab fa-github"></i>
-      </a>
+      </button>
     </li>
   );
 }

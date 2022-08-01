@@ -14,7 +14,6 @@ function App() {
   const handleClick = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    const newThemeM = theme === false ? true : false;
     setToggled((newThemeM) => !newThemeM);
   };
 
