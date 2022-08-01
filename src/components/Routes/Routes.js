@@ -2,7 +2,6 @@ import React from "react";
 import Portfolio from "../../pages/Portfolio/Portfolio";
 import Home from "../../pages/home/Home";
 import Resume from "../../pages/resume/Resume";
-import Test from "../../pages/Portfolio/test";
 import Contact from "../../pages/contact/contact";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -16,7 +15,6 @@ function Motion() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/test" element={<Test />} />
       </Routes>
     </AnimatePresence>
   );

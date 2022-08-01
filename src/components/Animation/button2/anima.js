@@ -4,7 +4,7 @@ function anima() {
   return (
     <div className="wrap">
       <div className="link_wrap">
-        <a href="https://drive.google.com/file/d/1AAJkHIKFwLzA_5NmxmPapwQU5RtRY13a/view?usp=sharing" className="wrap-a" target="_blank">
+        <a rel="noreferrer" href="https://drive.google.com/file/d/1AAJkHIKFwLzA_5NmxmPapwQU5RtRY13a/view?usp=sharing" className="wrap-a" target="_blank">
           Download CV
         </a>
         <div className="icona">

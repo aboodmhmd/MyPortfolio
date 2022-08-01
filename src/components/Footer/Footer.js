@@ -13,7 +13,7 @@ const Footer = () => {
           @2022 All Rights Reserved
           <br/>
           Designed and Developed by{" "}
-          <a target="_blank" href={Resume.social.Facebook.link}>
+          <a target="_blank" to={Resume.social.Facebook.link} rel="noreferrer">
             Me.
           </a>{" "}
         </p>

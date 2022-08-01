@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
-import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Animy from "../../components/Animation/button5/animy";
 import {
@@ -77,7 +76,7 @@ const Portfolio = () => {
           <Grid container spacing={5} className="center-card">
             {Resume.portfolio.map((project) => (
               <>
-                {tabValue == project.tag || tabValue == "All" ? (
+                {tabValue === project.tag || tabValue === "All" ? (
                   <Grid item>
                     <Grow in timeout={1000}>
                       <Card

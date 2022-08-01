@@ -1,6 +1,3 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FaceIcon from "@mui/icons-material/Face";
 import DataObjectIcon from "@mui/icons-material/DataObject";
@@ -10,7 +7,6 @@ import BugReportIcon from "@mui/icons-material/BugReport";
 import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
 import AddCardIcon from "@mui/icons-material/AddCard";
 import React from "react";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
 import { Typography } from "@mui/material";

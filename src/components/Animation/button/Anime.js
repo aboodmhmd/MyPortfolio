@@ -1,6 +1,5 @@
 import React from 'react'
 import './button.css'
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Anime = ({ style, style2, title,icon,link }) => {
   function btn(){

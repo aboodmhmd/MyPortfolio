@@ -3,7 +3,6 @@ import "./profile.css";
 import Anim from "../Animation/textAnime/Animtxt";
 import CustomTimeline, {
   CustomTimelineSeparator,
-  CustomTimelineSeparator2,
 } from "../Timeline/Timeline";
 import Resume from "../../utils/resumeData";
 import TimelineItem from "@mui/lab/TimelineItem";
