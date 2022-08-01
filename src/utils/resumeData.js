@@ -1,3 +1,6 @@
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FaceIcon from "@mui/icons-material/Face";
 import DataObjectIcon from "@mui/icons-material/DataObject";
@@ -28,19 +31,19 @@ export default {
       link: "https://github.com/aboodmhmd",
       name: "Github",
       style: "icon github",
-      style2: "fab fa-github",
+      icon: <GitHubIcon />,
     },
     Facebook: {
       link: "https://www.facebook.com/profile.php?id=100004822723530",
       name: "Facebook",
       style: "icon facebook",
-      style2: "fab fa-facebook-f",
+      icon: <FacebookIcon />,
     },
     Instagram: {
       link: "https://www.instagram.com/ab.do_mohamed/",
       name: "Instagram",
       style: "icon instagram",
-      style2: "fab fa-instagram",
+      icon: <InstagramIcon />,
     },
     Linked: {
       link: "https://www.linkedin.com/in/abdelrahman-shehata-9a20b41b1",

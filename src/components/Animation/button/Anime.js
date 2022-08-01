@@ -10,7 +10,6 @@ const Anime = ({ style, style2, title,icon,link }) => {
         <link to={link} target="_blank" />
         <li className={style}  >
           <span className="tooltip" >{title}</span>
-          <span><i className={style2}></i></span>
           <span className='linked'>{icon}</span>
         </li>
         </div>
