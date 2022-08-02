@@ -7,8 +7,14 @@
     min-height: 80px !important;
     
 }
-
-
+li.MuiTimelineItem-root.MuiTimelineItem-positionRight.MuiTimelineItem-missingOppositeContent.timeline_firstitem.css-1rcbby2{    flex: 0 !important;
+    padding:0px !important;
+    flex:none !important
+}
+.css-1rcbby2::before{
+    padding:0px !important;
+    flex:none !important
+}
 .timeline .MuiTimelineItem-root {
     min-height: 0px;
    

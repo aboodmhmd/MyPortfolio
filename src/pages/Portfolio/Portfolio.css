@@ -6,6 +6,9 @@
   font-weight: 400 !important;
   min-width: 0px !important;
 }
+button.MuiButtonBase-root.MuiCardActionArea-root.css-1jluznr {
+  display: inline !important;
+}
 .custom-tab .customTab-item:hover {
   color: orange;
   transition: 0.5s;
@@ -57,10 +60,10 @@ button.MuiButtonBase-root.MuiCardActionArea-root.css-b6lsxj-MuiButtonBase-root-M
   color: black;
   margin: 0px 12px;
   list-style: none !important;
-  text-decoration: none
+  text-decoration: none;
 }
-.section{
-  margin-bottom:430px
+.section {
+  margin-bottom: 430px;
 }
 .projectDialog-des {
   margin-top: 10px !important;
