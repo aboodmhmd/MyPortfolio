@@ -6,7 +6,6 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import useLocalStorage from "use-local-storage";
 import Toggle from "./components/Animation/button4/animat";
-import React from "react";
 import Motion from "./components/Routes/Routes"
 function App() {
   const [toggled, setToggled] = useLocalStorage("theme" ? true : false);
